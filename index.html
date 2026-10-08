@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Rachana, Software Engineer - building scalable, modern web applications and robust software solutions.">
+  <title>Rachana | Software Engineer Portfolio</title>
+
+  <!-- Modern Developer Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================= -->
+  <!-- 1. HEADER & NAVIGATION                                    -->
+  <!-- ========================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <!-- Logo / Brand Name -->
+      <a href="#hero" class="brand-logo" aria-label="Rachana Portfolio Home">
+        <span class="brand-bracket">&lt;</span>Rachana<span class="brand-slash">/</span><span
+          class="brand-bracket">&gt;</span>
+      </a>
+
+      <!-- Primary Navigation Bar -->
+      <nav class="main-navigation" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#timeline" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Night Mode / Dark Mode Toggle -->
+      <div class="theme-toggle-wrapper">
+        <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Night Mode"
+          aria-pressed="false">
+          <span class="theme-icon" id="theme-icon" aria-hidden="true">&#9790;</span>
+          <span class="theme-label" id="theme-label">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT AREA                                         -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================= -->
+    <!-- 2. HERO SECTION (FUTURISTIC PIXEL-WINDOW DESIGN)        -->
+    <!-- ======================================================= -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <!-- Ambient Pixel Art Matrix & Grid Backdrop -->
+      <div class="pixel-backdrop" aria-hidden="true">
+        <div class="pixel-stars"></div>
+        <div class="pixel-grid-mesh"></div>
+        <div class="glow-orb glow-orb-cyan"></div>
+        <div class="glow-orb glow-orb-purple"></div>
+      </div>
+
+      <div class="hero-container">
+        <!-- Left Column: Name, Developer Tagline & Actions -->
+        <div class="hero-text-col">
+          <div class="hero-status-pill">
+            <span class="status-indicator-dot"></span>
+            <span class="status-text">SYS.STATUS: ONLINE &bull; OPEN TO OPPORTUNITIES</span>
+          </div>
+
+          <p class="hero-greeting">&lt;hello world /&gt; I'm</p>
+          <h1 id="hero-heading" class="hero-name">
+            <span class="name-gradient">Rachana</span>
+          </h1>
+          <h2 class="hero-title">
+            <span class="role-prefix">&gt; </span>Software Engineer <span class="cursor-blink">_</span>
+          </h2>
+          <p class="hero-description">
+            Passionate about crafting elegant, scalable software solutions, modern web experiences,
+            and solving complex real-world engineering problems with clean architecture.
+          </p>
+
+          <!-- Core Tech Badges -->
+          <div class="hero-tech-pills" aria-label="Core Technical Stack">
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">AWS Cloud</span>
+            <span class="tech-pill">System Design</span>
+          </div>
+
+          <!-- Call to Action (CTA) Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span class="btn-text">View My Work</span>
+              <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <a href="#resume" class="btn btn-outline" download>Download Resume</a>
+          </div>
+
+          <!-- Quick Metrics / Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Exp</span>
+            </div>
+            <div class="stat-divider">/</div>
+            <div class="stat-item">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-divider">/</div>
+            <div class="stat-item">
+              <span class="stat-number">99.9%</span>
+              <span class="stat-label">Uptime Mindset</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Asymmetrical Glowing Pixel-Window Photo Frame -->
+        <div class="hero-visual-col">
+          <div class="pixel-window-wrapper">
+
+            <!-- Window Terminal Header Bar -->
+            <div class="pixel-window-header">
+              <div class="pixel-window-dots" aria-hidden="true">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-expand"></span>
+              </div>
+              <div class="pixel-window-title">rachana_profile.raw [24-BIT]</div>
+              <div class="pixel-window-coords">SYS://READY</div>
+            </div>
+
+            <!-- Asymmetrical Glowing Pixel Frame Container -->
+            <div class="pixel-frame-container">
+              <!-- Pixel Corner Tech Brackets -->
+              <span class="pixel-corner corner-tl" aria-hidden="true"></span>
+              <span class="pixel-corner corner-tr" aria-hidden="true"></span>
+              <span class="pixel-corner corner-bl" aria-hidden="true"></span>
+              <span class="pixel-corner corner-br" aria-hidden="true"></span>
+
+              <!-- Stepped Pixel Notch Accents -->
+              <div class="pixel-notch-top" aria-hidden="true"></div>
+              <div class="pixel-notch-bottom" aria-hidden="true"></div>
+
+              <!-- Inner Window with Rachana's Photo (Face and Identity Fully Preserved) -->
+              <div class="pixel-window-inner">
+                <img src="assets/images/rachana.jpg" alt="Rachana - Software Engineer" class="hero-portrait-img"
+                  loading="eager" />
+
+                <!-- Subtle Scanline & Grid Effect Layers (Non-obscuring) -->
+                <div class="pixel-scanline-fx" aria-hidden="true"></div>
+                <div class="pixel-crt-vignette" aria-hidden="true"></div>
+              </div>
+
+              <!-- Floating Pixel HUD Badges -->
+              <div class="hud-chip hud-chip-top" aria-hidden="true">
+                <span class="hud-led"></span>
+                <span>IDENTITY: VERIFIED</span>
+              </div>
+
+              <div class="hud-chip hud-chip-bottom" aria-hidden="true">
+                <span class="hud-code">&lt;ENGINEER /&gt;</span>
+                <span class="hud-glow-bar"></span>
+              </div>
+            </div>
+
+            <!-- Frame Base Meta -->
+            <div class="pixel-window-footer">
+              <span class="footer-meta-id">DEV_ID #84920</span>
+              <span class="footer-meta-state"><span class="pulse-dot"></span> PIXEL CORE ACTIVE</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 3. ABOUT ME SECTION                                     -->
+    <!-- ======================================================= -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="section-container">
+        <h2 id="about-heading" class="section-title">About Me</h2>
+
+        <div class="about-content">
+          <!-- Profile Image in About Section -->
+          <figure class="about-image-wrapper">
+            <img src="assets/images/rachana.jpg" alt="Portrait of Rachana" class="about-image">
+            <figcaption class="about-image-caption">Rachana &mdash; Software Engineer</figcaption>
+          </figure>
+
+          <!-- Bio & Story -->
+          <div class="about-bio">
+            <p>
+              I am a results-driven Software Engineer with a passion for designing resilient systems,
+              writing clean, maintainable code, and turning complex challenges into intuitive digital products.
+            </p>
+            <p>
+              With experience across full-stack development, distributed services, and cloud environments,
+              I enjoy collaborating across cross-functional teams to build high-performance applications that delight
+              users.
+            </p>
+
+            <!-- Quick Facts / Highlights Placeholder -->
+            <ul class="about-highlights">
+              <li><strong>Location:</strong> Available for Remote &amp; On-Site</li>
+              <li><strong>Specialization:</strong> Full-Stack Development &amp; Cloud Systems</li>
+              <li><strong>Experience:</strong> 3+ Years in Software Engineering</li>
+              <li><strong>Open to:</strong> Full-Time Opportunities &amp; Technical Collaborations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 4. SKILLS / TECHNOLOGIES SECTION                        -->
+    <!-- ======================================================= -->
+    <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+      <div class="section-container">
+        <h2 id="skills-heading" class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-subtitle">Core technical stack and tools I work with daily.</p>
+
+        <div class="skills-grid">
+          <!-- Category: Frontend -->
+          <article class="skills-category">
+            <h3 class="category-title">Frontend Development</h3>
+            <ul class="skills-list">
+              <li class="skill-item">HTML5 &amp; CSS3</li>
+              <li class="skill-item">JavaScript (ES6+)</li>
+              <li class="skill-item">TypeScript</li>
+              <li class="skill-item">React.js</li>
+              <li class="skill-item">Next.js</li>
+              <li class="skill-item">Responsive &amp; Accessible Design</li>
+            </ul>
+          </article>
+
+          <!-- Category: Backend -->
+          <article class="skills-category">
+            <h3 class="category-title">Backend &amp; APIs</h3>
+            <ul class="skills-list">
+              <li class="skill-item">Node.js &amp; Express</li>
+              <li class="skill-item">Python / Django / FastAPI</li>
+              <li class="skill-item">Java / Spring Boot</li>
+              <li class="skill-item">RESTful APIs &amp; GraphQL</li>
+              <li class="skill-item">Microservices Architecture</li>
+            </ul>
+          </article>
+
+          <!-- Category: Databases & Cloud -->
+          <article class="skills-category">
+            <h3 class="category-title">Databases &amp; Cloud</h3>
+            <ul class="skills-list">
+              <li class="skill-item">PostgreSQL &amp; MySQL</li>
+              <li class="skill-item">MongoDB &amp; Redis</li>
+              <li class="skill-item">AWS &amp; Cloud Infrastructure</li>
+              <li class="skill-item">Docker &amp; Containers</li>
+              <li class="skill-item">CI/CD Pipelines (GitHub Actions)</li>
+            </ul>
+          </article>
+
+          <!-- Category: Tools & Practices -->
+          <article class="skills-category">
+            <h3 class="category-title">Tools &amp; Practices</h3>
+            <ul class="skills-list">
+              <li class="skill-item">Git &amp; Version Control</li>
+              <li class="skill-item">Test-Driven Development (Unit &amp; E2E Testing)</li>
+              <li class="skill-item">Agile / Scrum Methodologies</li>
+              <li class="skill-item">System Architecture &amp; Design</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 5. WORK EXPERIENCE / TIMELINE                           -->
+    <!-- ======================================================= -->
+    <section id="timeline" class="timeline-section" aria-labelledby="timeline-heading">
+      <div class="section-container">
+        <h2 id="timeline-heading" class="section-title">Work Experience</h2>
+        <p class="section-subtitle">My professional journey and track record.</p>
+
+        <div class="timeline-container">
+          <!-- Timeline Entry 1 -->
+          <article class="timeline-item">
+            <header class="timeline-header">
+              <h3 class="timeline-role">Software Engineer</h3>
+              <p class="timeline-company">Tech Innovators Corp.</p>
+              <time class="timeline-date" datetime="2024-01/present">2024 &ndash; Present</time>
+            </header>
+            <div class="timeline-body">
+              <p>
+                Architected and deployed responsive web services and distributed microservices,
+                improving application latency and system scalability.
+              </p>
+              <ul>
+                <li>Spearheaded performance optimizations resulting in a 35% reduction in page load times.</li>
+                <li>Collaborated with product managers and UX designers to release user-centric features.</li>
+                <li>Maintained automated CI/CD deployment pipelines on cloud infrastructure.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Timeline Entry 2 -->
+          <article class="timeline-item">
+            <header class="timeline-header">
+              <h3 class="timeline-role">Junior Software Engineer</h3>
+              <p class="timeline-company">Digital Solutions Studio</p>
+              <time class="timeline-date" datetime="2022-06/2023-12">2022 &ndash; 2023</time>
+            </header>
+            <div class="timeline-body">
+              <p>
+                Built modular front-end interfaces, maintained RESTful API endpoints,
+                and contributed to robust database migrations.
+              </p>
+              <ul>
+                <li>Implemented reusable UI components adhering to WCAG accessibility guidelines.</li>
+                <li>Integrated third-party APIs and payment gateway integrations.</li>
+                <li>Wrote automated unit tests achieving over 85% test coverage.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Timeline Entry 3 -->
+          <article class="timeline-item">
+            <header class="timeline-header">
+              <h3 class="timeline-role">Software Engineering Intern</h3>
+              <p class="timeline-company">NextGen Tech Labs</p>
+              <time class="timeline-date" datetime="2021-06/2021-12">2021</time>
+            </header>
+            <div class="timeline-body">
+              <p>
+                Assisted senior engineers in refactoring legacy codebases and developing internal data analytics
+                dashboards.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 6. PROJECTS SECTION                                     -->
+    <!-- ======================================================= -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+      <div class="section-container">
+        <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A showcase of recent software and web engineering projects.</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-media-placeholder">
+              <!-- <img src="assets/images/project1.png" alt="Screenshot of Cloud Task Management System" class="project-image"> -->
+              <span class="project-media-label">Project Preview 1</span>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Cloud Task Management System</h3>
+              <p class="project-description">
+                A collaborative task and workflow automation platform built for remote engineering teams,
+                featuring real-time updates and analytics dashboards.
+              </p>
+              <ul class="project-tech-stack" aria-label="Technologies used">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+                <li>WebSockets</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://example.com/demo1" class="btn btn-small" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a>
+                <a href="https://github.com/example/project1" class="btn btn-small btn-secondary" target="_blank"
+                  rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-media-placeholder">
+              <!-- <img src="assets/images/project2.png" alt="Screenshot of Analytics & Metrics API Service" class="project-image"> -->
+              <span class="project-media-label">Project Preview 2</span>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Analytics &amp; Metrics API Service</h3>
+              <p class="project-description">
+                High-throughput telemetry ingestion engine and query API capable of processing thousands
+                of events per second with sub-second aggregate query responses.
+              </p>
+              <ul class="project-tech-stack" aria-label="Technologies used">
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>Redis</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://example.com/demo2" class="btn btn-small" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a>
+                <a href="https://github.com/example/project2" class="btn btn-small btn-secondary" target="_blank"
+                  rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-media-placeholder">
+              <!-- <img src="assets/images/project3.png" alt="Screenshot of E-Commerce Storefront Engine" class="project-image"> -->
+              <span class="project-media-label">Project Preview 3</span>
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Modern E-Commerce Engine</h3>
+              <p class="project-description">
+                Headless e-commerce storefront with server-side rendering, instant product search,
+                secure checkout flow, and custom inventory management.
+              </p>
+              <ul class="project-tech-stack" aria-label="Technologies used">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>Stripe API</li>
+                <li>Tailwind CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://example.com/demo3" class="btn btn-small" target="_blank" rel="noopener noreferrer">Live
+                  Demo</a>
+                <a href="https://github.com/example/project3" class="btn btn-small btn-secondary" target="_blank"
+                  rel="noopener noreferrer">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 7. EDUCATION SECTION                                    -->
+    <!-- ======================================================= -->
+    <section id="education" class="education-section" aria-labelledby="education-heading">
+      <div class="section-container">
+        <h2 id="education-heading" class="section-title">Education</h2>
+        <p class="section-subtitle">Academic background and credentials.</p>
+
+        <div class="education-list">
+          <!-- Degree 1 -->
+          <article class="education-item">
+            <header class="education-header">
+              <h3 class="education-degree">Bachelor of Science in Computer Science &amp; Engineering</h3>
+              <p class="education-institution">University of Technology</p>
+              <time class="education-dates" datetime="2018/2022">2018 &ndash; 2022</time>
+            </header>
+            <div class="education-details">
+              <p><strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Operating Systems, Database
+                Management Systems, Software Engineering Principles, Computer Networks.</p>
+              <p><strong>Honors &amp; Activities:</strong> Dean's List, Lead Organizer for University Hackathon.</p>
+            </div>
+          </article>
+
+          <!-- Certifications Placeholder -->
+          <article class="education-item certification-item">
+            <header class="education-header">
+              <h3 class="education-degree">AWS Certified Solutions Architect &ndash; Associate</h3>
+              <p class="education-institution">Amazon Web Services</p>
+              <time class="education-dates" datetime="2023">Issued 2023</time>
+            </header>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 8. SERVICES / WHAT I DO                                 -->
+    <!-- ======================================================= -->
+    <section id="services" class="services-section" aria-labelledby="services-heading">
+      <div class="section-container">
+        <h2 id="services-heading" class="section-title">What I Do &amp; Services</h2>
+        <p class="section-subtitle">Areas of expertise where I can deliver high-impact results.</p>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="service-card">
+            <h3 class="service-title">Full-Stack Web Development</h3>
+            <p class="service-description">
+              End-to-end web applications built from scratch, combining responsive, accessible frontends
+              with robust, testable backends and clean architectures.
+            </p>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card">
+            <h3 class="service-title">API Architecture &amp; Integration</h3>
+            <p class="service-description">
+              Designing secure, scalable RESTful &amp; GraphQL APIs, third-party service integrations,
+              and optimizing database querying for optimal throughput.
+            </p>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card">
+            <h3 class="service-title">Cloud Deployment &amp; DevOps</h3>
+            <p class="service-description">
+              Containerizing applications with Docker, configuring CI/CD automation pipelines,
+              and deploying cloud infrastructure for zero-downtime releases.
+            </p>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card">
+            <h3 class="service-title">Code Review &amp; Optimization</h3>
+            <p class="service-description">
+              Auditing web performance, identifying bottlenecks, refactoring legacy components,
+              and improving accessibility and SEO compliance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 9. CONTACT SECTION                                      -->
+    <!-- ======================================================= -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="section-container">
+        <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Have a project, job opportunity, or question? Feel free to reach out!</p>
+
+        <div class="contact-layout">
+          <!-- Contact Information & Details -->
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              I am always open to discussing new opportunities, challenging engineering projects,
+              or tech collaborations.
+            </p>
+            <ul class="contact-details-list">
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:rachana@example.com">rachana@example.com</a>
+              </li>
+              <li>
+                <strong>Location:</strong>
+                <span>San Francisco, CA / Remote</span>
+              </li>
+            </ul>
+
+            <!-- Social Media Links (Section Sub-component) -->
+            <div id="social-links" class="social-links-wrapper">
+              <h4>Find Me Online</h4>
+              <ul class="social-links-list">
+                <li><a href="https://github.com/rachana" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub Profile">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/rachana" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn Profile">LinkedIn</a></li>
+                <li><a href="https://twitter.com/rachana" target="_blank" rel="noopener noreferrer"
+                    aria-label="Twitter Profile">Twitter / X</a></li>
+                <li><a href="https://dev.to/rachana" target="_blank" rel="noopener noreferrer"
+                    aria-label="Dev.to Technical Blog">Dev.to</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form" action="#" method="POST" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="contact-name" name="name" required placeholder="Your full name"
+                  autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="contact-email" name="email" required placeholder="you@example.com"
+                  autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Project inquiry / Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="contact-message" name="message" rows="5" required
+                  placeholder="Write your message here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- 10. FOOTER                                                -->
+  <!-- ========================================================= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <p class="footer-brand"><strong>Rachana</strong> &mdash; Software Engineer</p>
+
+        <!-- Social Media Links in Footer -->
+        <ul class="footer-social-links" aria-label="Footer Social Links">
+          <li><a href="https://github.com/rachana" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/rachana" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://twitter.com/rachana" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+        </ul>
+
+        <!-- Back to Top Link -->
+        <a href="#hero" class="back-to-top" aria-label="Back to top of page">Back to top &uarr;</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rachana. All rights reserved.</p>
+        <p class="footer-note">Built with semantic HTML5. Ready for custom CSS styling and JavaScript interactivity.</p>
+      </div>
+
+
+      <!-- JavaScript Core -->
+      <script src="script.js"></script>
+
+</body>
+
+</html>
